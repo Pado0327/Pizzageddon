@@ -1,0 +1,42 @@
+[
+  {
+    "pizza_name": "BeefSpinachPizza",
+    "price": "$18",
+    "images": "BeefSpinachPizza.jpg"
+  },
+  {
+    "pizza_name": "DeluxePizza",
+    "price": "$19",
+    "images": "DeluxePizza.jpg"
+  },
+  {
+    "pizza_name": "GarlicPizza",
+    "price": "$18",
+    "images": "GarlicPizza.jpg"
+  },
+  {
+    "pizza_name": "HawaiianPizza",
+    "price": "$18",
+    "images": "HawaiianPizza.jpg"
+  },
+  {
+    "pizza_name": "JalapenoPizza",
+    "price": "$18",
+    "images": "JalapenoPizza.jpg"
+  },
+  {
+    "pizza_name": "ShrimpPizza",
+    "price": "$19",
+    "images": "ShrimpPizza.jpg"
+  },
+  {
+    "pizza_name": "SmokedSalmonPizza",
+    "price": "$20",
+    "images": "SmokedSalmonPizza.jpg"
+  },
+  {
+    "pizza_name": "TomatoCreamPizza",
+    "price": "$17",
+    "images": "TomatoCreamPizza.jpg"
+  }
+]

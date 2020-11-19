@@ -1,0 +1,89 @@
+<!-------s--------
+
+    Final web project
+    Name: JaejinKim
+    Date: 06/24/2020
+    Description: contact html for Final project
+
+----------------->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="contact.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="topHeader">
+      <nav id="topNav">
+        <h1>Pizzageddon</h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="topContainer"></div>
+
+    <div id="ContactContainer">
+      <h2>Contact us</h2>
+      <form method="post" id="contact_form" action="index.html">
+        <fieldset>
+          <ol>
+            <li>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" autofocus />
+              <div class="name_error error" id="name_error">* Please enter your name.</div>
+            </li>
+            <li>
+              <label for="phone">Phone number:</label>
+              <input type="number" id="phone" name="phone" placeholder="(204)-###-####" />
+              <div class="phone_error error" id="phone_error">* Please enter your phone number</div>
+              <div class="phone_invalid error" id="phone_invalid">* Invalid phone number</div>
+            </li>
+            <li>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" />
+              <div class="email_error error" id="email_error">* please enter your email</div>
+              <div class="email_invalid error" id="email_invalid">* Invalid email address</div>
+            </li>
+            <li>
+              <label for="comment_area">Comment:</label>
+              <textarea id="comment_area"></textarea>
+            </li>
+          </ol>
+        </fieldset>
+        <fieldset>
+          <button type="submit" id="submit">Submit</button>
+          <button type="reset" id="reset">Reset</button>
+        </fieldset>
+      </form>
+    </div>
+
+    <footer id="bottomContainer">
+      <h3>Pizzageddon</h3>
+
+      <div id="address">
+        <p>123 Pembina Hwy</p>
+        <p>Winnipeg, MB</p>
+        <p>(204)123-4567</p>
+      </div>
+
+      <nav id="footerNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="">Contact us</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

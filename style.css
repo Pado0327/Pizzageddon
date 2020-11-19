@@ -1,0 +1,556 @@
+/****************
+    
+    Final Web Project
+    Name: JaeJinKim
+    Date: 06/24/2020
+    Description: css for index, menu, contact html
+
+*****************/
+html,
+body,
+header,
+div,
+article,
+nav,
+ul,
+li,
+h1,
+h2,
+h3,
+footer {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#topHeader {
+  color: whitesmoke;
+  background-color: #120f0a;
+  border-bottom: solid 1px #423940;
+  padding: 10px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+#topHeader #topNav {
+  display: flex;
+  justify-content: space-between;
+}
+
+#topNav h1 {
+  font-size: 2vw;
+  font-family: "Pacifico", cursive;
+}
+
+#topNav ul {
+  display: flex;
+  align-items: center;
+  font-size: 1.3vw;
+  font-family: "Open Sans", sans-serif;
+}
+
+#topNav ul li {
+  list-style: none;
+  margin-right: 15px;
+}
+
+#topNav li a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+#topNav li a:hover,
+#topNav li a:focus {
+  text-shadow: 1px 2px 3px aliceblue;
+  border-bottom: 1px solid whitesmoke;
+}
+
+/* topContent */
+
+#topContainer,
+#menu-topContainer {
+  background-image: url(images/Backgroundimg_Pizza.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+  height: 900px;
+  justify-content: center;
+  line-height: 1.5;
+  padding: 20px 30px;
+}
+
+#topContainer h3 {
+  font-size: 2vw;
+  margin-bottom: 20px;
+}
+
+#topContainer ul {
+  font-size: 1.3vw;
+}
+
+/* middle container */
+
+#middleContainer {
+  background-color: rgb(22, 22, 22);
+  color: aliceblue;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  padding: 50px 40px;
+}
+
+#middleContainer #leftsection {
+  flex-basis: 50%;
+}
+
+#leftsection h3 {
+  font-size: 2vw;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#leftsection img {
+  height: 500px;
+  width: 100%;
+  display: block;
+  border-radius: 100px;
+}
+
+#middleContainer #rightsection {
+  padding: 50px 20px 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px;
+  flex-basis: 50%;
+}
+
+#rightsection h3 {
+  font-size: 1.5vw;
+  padding-top: 50px;
+}
+
+#rightsection ul {
+  line-height: 1.8;
+  font-size: 1.3vw;
+  padding-bottom: 30px;
+  list-style: none;
+}
+
+#rightsection li:first-child {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#rightsection li:not(:first-child) {
+  font-style: italic;
+}
+
+/* footer */
+
+#bottomContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 20px auto;
+  font-size: 13px;
+}
+
+#bottomContainer h3 {
+  align-self: center;
+  color: #9c9c9c;
+  font-family: "Open Sans", sans-serif;
+}
+
+#bottomContainer #address {
+  color: #919090;
+  font-family: "Open Sans", sans-serif;
+}
+
+#bottomContainer #footerNav {
+  align-self: center;
+  color: #9c9c9c;
+  font-family: "Open Sans", sans-serif;
+}
+
+#footerNav li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+#footerNav a {
+  text-decoration: none;
+  color: #9c9c9c;
+}
+
+#footerNav a:hover,
+#footerNav a:focus {
+  color: black;
+}
+
+/***** Css for Menu ******/
+
+/** cart btn **/
+
+#menuContianer {
+  background-image: url(images/menu3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0 150px;
+  height: auto;
+}
+
+#menuContianer #cart {
+  display: flex;
+  max-width: 950px;
+  width: 100vh;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+#menuContianer #cart #cartbtn {
+  width: 100px;
+  background-color: rgb(29, 21, 21);
+  border-radius: 10px;
+  color: white;
+}
+
+#menuContianer #cartbtn:hover {
+  cursor: pointer;
+}
+
+#menuContianer #cartcontent {
+  color: white;
+  height: auto;
+  width: 150px;
+  margin: 0;
+  display: none;
+}
+
+#cartcontent li {
+  color: white;
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+}
+
+#menuContianer #cartcontent #removeItem {
+  font-size: 10px;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(29, 21, 21);
+  margin: 5px 0 0 25px;
+}
+
+/** menuContainer css **/
+
+#menuContianer h2 {
+  color: white;
+  width: 130px;
+  margin: 20px auto;
+  margin-top: 0;
+  font-family: "Pacifico", cursive;
+  font-size: 3rem;
+  font-style: italic;
+}
+
+#menuContianer #pizzaList {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 950px;
+  width: 100vh;
+  font-family: "Open Sans", sans-serif;
+  margin: 0px auto;
+}
+
+#menuContianer #pizzaList li > *:not(img) {
+  text-align: center;
+}
+
+/* #menuContianer li:nth-child(n + 5) {
+  position: relative;
+  top: 400px;
+  right: 935px;
+} */
+
+#menuContianer #pizzaList li {
+  height: 350px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+#menuContianer #pizzaList li button {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  border-radius: 10px;
+  position: relative;
+  left: 60px;
+}
+
+#menuContianer #pizzaList li button:hover {
+  cursor: pointer;
+}
+
+#menuContianer #pizzaList li p {
+  color: white;
+  font-size: 1.3rem;
+}
+
+#menuContianer #pizzaList li img {
+  height: 14rem;
+  width: 14rem;
+  margin-right: 10px;
+}
+
+/***** Css for Contact Us ******/
+
+#ContactContainer {
+  align-items: center;
+  background-image: url("images/ContactUs.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 50px 0;
+}
+
+#ContactContainer h2 {
+  font-family: "Pacifico", cursive;
+  font-size: 3rem;
+  font-style: italic;
+}
+
+#ContactContainer ol {
+  padding: 0;
+}
+
+#ContactContainer #contact_form ol li {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.3rem;
+  list-style: none;
+  line-height: 3;
+}
+
+#contact_form ol li:last-child label,
+#contact_form ol li:last-child textarea {
+  display: block;
+}
+
+#contact_form ol li:last-child textarea {
+  width: 300px;
+  height: 200px;
+}
+
+#contact_form ol li .error {
+  color: red;
+  display: none;
+}
+
+#contact_form fieldset:nth-of-type(2) {
+  text-align: center;
+}
+
+#contact_form input:focus {
+  background-color: rgb(51, 51, 49);
+  color: rgb(233, 219, 30);
+}
+
+#contact_form fieldset button {
+  border-radius: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#contact_form fieldset button:hover {
+  cursor: pointer;
+}
+
+/*** media ***/
+
+@media only screen and (max-width: 1200px) {
+  #topNav h1 {
+    font-size: 2.7vw;
+  }
+  #topNav ul {
+    font-size: 1.9vw;
+  }
+  #topContainer h3 {
+    font-size: 2.3vw;
+  }
+
+  #topContainer ul {
+    font-size: 1.5vw;
+  }
+
+  #leftsection h3 {
+    font-size: 2.7vw;
+  }
+
+  #rightsection h3 {
+    font-size: 2vw;
+  }
+
+  #rightsection ul {
+    font-size: 1.8vw;
+  }
+
+  #bottomContainer {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  #topHeader #topNav {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #topHeader h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+
+  #topNav ul {
+    flex-direction: column;
+    font-size: 1.3rem;
+  }
+
+  #topContainer {
+    height: 700px;
+    align-items: center;
+  }
+
+  #topContainer h3 {
+    font-size: 1.5rem;
+  }
+
+  #topContainer ul {
+    font-size: 1rem;
+    position: relative;
+    top: 240px;
+    text-shadow: 1px 3px 4px rgb(5, 5, 5);
+  }
+
+  /* middlecontainer */
+  #middleContainer {
+    flex-direction: column;
+  }
+
+  #leftsection h3 {
+    font-size: 1.8rem;
+  }
+
+  #middleContainer #rightsection {
+    padding: 0px;
+  }
+
+  #rightsection h3 {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+  }
+
+  #rightsection ul {
+    font-size: 1rem;
+  }
+
+  /**** menu css ***/
+
+  #menuContianer {
+    padding: 50px;
+    height: auto;
+  }
+  #menuContianer #cart {
+    max-width: 470px;
+  }
+
+  #menuContianer #pizzaList {
+    max-width: 470px;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  #topContainer ul {
+    font-size: 1rem;
+    position: relative;
+    top: 190px;
+    text-shadow: 1px 3px 4px rgb(5, 5, 5);
+  }
+
+  /** menue css */
+
+  #menuContianer {
+    padding: 80px 0;
+  }
+  #menuContianer #cart {
+    width: 50vw;
+  }
+
+  #menuContianer #pizzaList {
+    width: 50vw;
+  }
+
+  #menuContianer li img {
+    margin-right: 0;
+  }
+
+  /** contact us css */
+
+  #ContactContainer h2 {
+    font-size: 2rem;
+  }
+
+  #ContactContainer fieldset {
+    padding: 0;
+  }
+
+  #ContactContainer fieldset ol {
+    padding: 0;
+  }
+
+  #ContactContainer #contact_form ol li {
+    font-size: 1rem;
+  }
+
+  #contact_form ol li:last-child label,
+  #contact_form ol li:last-child textarea {
+    display: inline-block;
+  }
+
+  #contact_form ol li:last-child label {
+    position: relative;
+    bottom: 170px;
+  }
+
+  #contact_form ol li:last-child textarea {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #topContainer ul {
+    font-size: 1rem;
+    position: relative;
+    top: 160px;
+    text-shadow: 1px 3px 4px rgb(5, 5, 5);
+  }
+
+  #menuContianer #cart {
+    width: 235px;
+  }
+
+  #menuContianer #pizzaList {
+    width: 235px;
+  }
+}
